@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/layouts/Container';
+import Title from './components/layouts/Title';
+
+import { useState } from 'react';
 
 function App() {
+  // used by LoadButtons to change from title to main application
+  const [showTitle, setShowTitle] = useState(true)
+
+
+  // get/set JSON for all data
+  const [data, setData] = useState({})
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <script src="https://kit.fontawesome.com/b81b9feca9.js" crossorigin="anonymous"></script>
+      {showTitle && <Title setShowTitle={setShowTitle} setData={setData} />}
+      {!showTitle && <Container data={data} setData={setData} /> }
     </div>
   );
 }
