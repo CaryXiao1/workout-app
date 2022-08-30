@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/workout-app/static/css/main.1c8d052e.css",
-    "main.js": "/workout-app/static/js/main.3b8d274f.js",
+    "main.css": "/workout-app/static/css/main.e94d4adb.css",
+    "main.js": "/workout-app/static/js/main.013fe96e.js",
     "static/js/787.1e62910f.chunk.js": "/workout-app/static/js/787.1e62910f.chunk.js",
     "static/media/logo.svg": "/workout-app/static/media/logo.5eeaec9a4b567522aeb0c7677a760356.svg",
     "index.html": "/workout-app/index.html",
-    "main.1c8d052e.css.map": "/workout-app/static/css/main.1c8d052e.css.map",
-    "main.3b8d274f.js.map": "/workout-app/static/js/main.3b8d274f.js.map",
+    "main.e94d4adb.css.map": "/workout-app/static/css/main.e94d4adb.css.map",
+    "main.013fe96e.js.map": "/workout-app/static/js/main.013fe96e.js.map",
     "787.1e62910f.chunk.js.map": "/workout-app/static/js/787.1e62910f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1c8d052e.css",
-    "static/js/main.3b8d274f.js"
+    "static/css/main.e94d4adb.css",
+    "static/js/main.013fe96e.js"
   ]
 }
