@@ -1,70 +1,15 @@
-# Getting Started with Create React App
+# Workout App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository houses the source code and deployed production build of a react-based Workout Helper Application I made between June and August 2022.  
 
-## Available Scripts
+The application is **entirely** front-end, so no information placed into the application is stored on external servers. Furthermore, all computations are performed client-side, so your device will perform all computations. To save and load data, you simply save .wktlst files (which are JSON files under a different file name) onto your device, loading the information from the file when you use the application again.  
 
-In the project directory, you can run:
+Aside from using create-react-app and chart.js, all assets and code in this program were solely created by me.  This open-source software is licensed using the MIT License. 
 
-### `npm start`
+### Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This application allows you to store weightlifting-related workouts & their exercises. For each workout, you can specify the name, the date, and (optionally) your weight during the working. In each exercise, you can specify the exercise name, the number of sets and number of reps you perform, and the number of weight. The app is also designed to accept different rep or different weight amounts per app by seperating each numerical value with a single space. For examples, please see the sample workout list I have provided.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app also allows users to view statistics about their workouts and to view line graphs for their body weight, BMI, or exercise-specific weight over time by visiting the 'Stats & Graphs' screen of the workout. To view this screen, after loading or creating a new file, click on the 'Workout List' dropdown menu and select 'Stats & Graphs.'  
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Finally, I have included a sample Workout List inside the program for anyone to easily view the different features of the application. This sample list is a collection of some of my workouts over the past year, where you can see changes in my weight/BMI and in various exercises. To use this sample list, simply select 'Load File' on the title screen, check 'Use Cary's Default List', and press 'Import Workout Log'.  
