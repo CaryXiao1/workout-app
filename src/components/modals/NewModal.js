@@ -4,7 +4,6 @@ import { useState } from 'react'
  * props: processForm - function used to create the new workout list.
  *        setShowModal - boolean used to toggle the modal on and off.
  */
-
 const FileModal = ({ processForm, setShowModal }) => {
   const [name, setName] = useState('')
   const [feet, setFeet] = useState()

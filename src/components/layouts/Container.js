@@ -1,9 +1,11 @@
-import logo from '../../logo.svg';
-import WorkoutList from '../lists/WorkoutList';
-import Button from '../Button';
-import WorkoutModal from '../modals/WorkoutModal';
-import { useState } from 'react';
-import LoadModal from '../modals/LoadModal';
+import logo from '../../logo.svg'
+import WorkoutList from '../lists/WorkoutList'
+import Button from '../Button'
+import WorkoutModal from '../modals/WorkoutModal'
+import LoadModal from '../modals/LoadModal'
+import GraphsList from '../lists/GraphsList'
+
+import { useState } from 'react'
 
 /* 'Container' for the main part of the app. Replaces the title card once a 
  * a workout list is created or a list is loaded in.
@@ -78,14 +80,14 @@ const Container = ({ data, setData }) => {
         <div id='header'>
             <div className='header-left'>
                 <img src={logo} id="header-logo" alt="small-logo" />
-                <h1 id='file-title'>{ title }</h1>
+                <h1>{ title }</h1>
             </div>
             <div className='header-right'>
                 <button className='black' onClick={exportData}>Export File</button>
                 <button className='black' onClick={() => setShowLoad(true)}>Load File</button>
                 <select className='black' name="view-type" id="view-type" onChange={(e) => {setShowWList(e.target.value)}}>
                 <option className='black' value='1'>Workout List</option>
-                <option className='black' value=''>Stats</option>
+                <option className='black' value=''>Stats & Graphs</option>
                 </select>
             </div>
             {showLoad && <LoadModal processForm={processLoad} setShowModal={setShowLoad} setData={setData} />}
@@ -105,7 +107,7 @@ const Container = ({ data, setData }) => {
         <WorkoutList data={data} setData={setData}/>
         }
           
-        {!showWList && <h3><i>Statistics and Graphs will be added soon!</i></h3>}
+        {!showWList && <GraphsList data={data} />}
     </div>
   )
 }

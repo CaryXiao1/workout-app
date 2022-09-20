@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import WorkoutModal from '../modals/WorkoutModal'
 
 import { useState } from 'react'
@@ -35,22 +34,6 @@ const Workout = ({workout, data, setData}) => {
     </div>
 
   )
-}
-
-// onClick function to add new inputs to the 
-
-Workout.defaultProps = { 
-    title: 'workout',
-    date: '0',
-    numExercises: 0,
-    id: '0',
-}
-
-Workout.propTypes = {
-    title: PropTypes.string,
-    date: PropTypes.instanceOf(Date),
-    numExercises: PropTypes.number,
-    id: PropTypes.string,
 }
 
 export default Workout

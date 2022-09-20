@@ -9,8 +9,6 @@ import LoadModal from '../modals/LoadModal';
  * props: setShowTitle - boolean prop that defines whether 
  *        setData - function used to change the workout list JSON object
  */
-
-
 const Title = ({ setShowTitle, setData }) => {
   // used to toggle modals for importing/creating a new file
   const [showNew, setShowNew] = useState(false)
@@ -52,7 +50,7 @@ const Title = ({ setShowTitle, setData }) => {
       Workout App
     </h2>
     <p className="subtitle">
-      <em>by Cary Xiao - Alpha Version 1.0</em>
+      <em>by Cary Xiao - <a href='https://github.com/CaryXiao1/workout-app/tree/master' target="_blank" rel="noopener noreferrer">Source Code</a></em>
     </p>
     <div>
       <Button id='new-btn' size='scale' text="Start New" color='black' backColor='#d99502' onClick={() => setShowNew(true)}/>
